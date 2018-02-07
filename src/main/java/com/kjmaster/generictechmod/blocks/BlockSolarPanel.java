@@ -24,6 +24,7 @@ public class BlockSolarPanel extends Block implements IGTMModel
         super(Material.IRON);
         this.setUnlocalizedName(GenericTechMod.MODID + ".solar_panel");
         this.setRegistryName(new ResourceLocation(GenericTechMod.MODID, "solar_panel"));
+        setCreativeTab(GenericTechMod.gtmTab);
     }
 
     @Override

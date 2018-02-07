@@ -19,6 +19,7 @@ public class ItemDust extends Item implements IGTMModel
         this.setUnlocalizedName(GenericTechMod.MODID + ".dust");
         this.setRegistryName(new ResourceLocation(GenericTechMod.MODID, "dust"));
         this.setHasSubtypes(true);
+        setCreativeTab(GenericTechMod.gtmTab);
     }
 
     @Override

@@ -39,6 +39,7 @@ public class BlockFluxFurnace extends Block implements IGTMModel
         this.setUnlocalizedName(GenericTechMod.MODID + ".flux_furnace");
         this.setRegistryName(new ResourceLocation(GenericTechMod.MODID, "flux_furnace"));
         this.setTickRandomly(true);
+        setCreativeTab(GenericTechMod.gtmTab);
     }
 
     @Override

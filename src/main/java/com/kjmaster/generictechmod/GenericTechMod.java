@@ -1,8 +1,11 @@
 package com.kjmaster.generictechmod;
 
+import com.kjmaster.generictechmod.init.ModItems;
 import com.kjmaster.generictechmod.network.ModGuiHandler;
 import com.kjmaster.generictechmod.proxy.CommonProxy;
 import com.kjmaster.generictechmod.tiles.crusher.CrusherRegistry;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -24,6 +27,13 @@ public class GenericTechMod
 
     public static final String MODID = "generictechmod";
     public static final String VERSION = "1.0";
+
+    public static CreativeTabs gtmTab = new CreativeTabs(GenericTechMod.MODID) {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(ModItems.chip);
+        }
+    };
 
     public static Logger LOGGER;
 

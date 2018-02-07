@@ -31,6 +31,7 @@ public class BlockCrusher extends Block implements IGTMModel
         super(Material.IRON);
         this.setUnlocalizedName(GenericTechMod.MODID + ".crusher");
         this.setRegistryName(new ResourceLocation(GenericTechMod.MODID, "crusher"));
+        setCreativeTab(GenericTechMod.gtmTab);
     }
 
     @Override

@@ -19,6 +19,7 @@ public class ItemChip extends Item implements IGTMModel
         this.setUnlocalizedName(GenericTechMod.MODID + ".chip");
         this.setRegistryName(new ResourceLocation(GenericTechMod.MODID, "chip"));
         this.setHasSubtypes(true);
+        setCreativeTab(GenericTechMod.gtmTab);
     }
 
     @Override
